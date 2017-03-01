@@ -1,3 +1,75 @@
+0.11.5 / 2016-11-05
+===================
+
+* Fix even more redis command callbacks
+* Fix redis commands SLC integration #978
+
+
+0.11.4 / 2016-10-21
+===================
+
+* adding reds module to optional dependencies
+
+
+0.11.3 / 2016-10-21
+===================
+
+* Fix making reds module optional, #969
+
+
+0.11.2 / 2016-10-14
+===================
+
+* Update packages to remove CVEs, #932
+* Make reds an optional dependency, #922
+* Remove unnecessary dependency to lodash-deep, #921
+* Expose shutdown in process worker ctx, #912
+* Add ioredis support to watchStuckJobs, #884
+
+
+0.11.1 / 2016-06-15
+===================
+
+* Upgrade redis to 2.6
+* Add switch for each job event
+
+
+0.11.0 / 2016-05-13
+===================
+
+* force node_redis version to 2.4.x, Closes #857
+* Converting Job ids back into integers, #855
+* Fix LPUSH crash during shutdown, #854
+* Install kue-dashboard script, #853
+* Add start event to documentation, #841
+* Add parameter for testMode.enter to continue processing jobs, #821
+* Modern Node.js versions support, #812
+* Don't start the next job until the current one is totally finished, Closes #806
+* Store multiple instances of jobs in jobs id map to emit events for all, #750 
+
+
+0.10.6 / 2016-04-27
+===================
+
+* Redis Cluster fix, Closes #861
+
+
+0.10.5 / 2016-01-14
+===================
+
+* Attempts surpassing max attempts on delay jobs upon failure, resulting in infinite retries, Fixes #797
+* Add yargs dependency for kue-dashboard, #796
+
+
+0.10.4 / 2016-01-14
+===================
+
+* fix zpop callback on shutdown
+* fix connection_options in test.js
+* Unit tests for redis.js #779
+* Tests for kue.js #778
+
+
 0.10.3 / 2015-11-20
 ===================
 
